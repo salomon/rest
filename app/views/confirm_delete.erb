@@ -1,0 +1,9 @@
+
+<div class='container'>
+  <h2>Are you sure you want to delete the note titled '<%= @note.title %>'? </h2>
+  <form action='/delete' method='post'>
+    <input type="hidden" name="note_id" value=<%=@note.id%>>
+    <input type="submit" name="submit" value="Delete">
+    <input type="submit" name="submit" value="Cancel">
+  </form>
+</div>
